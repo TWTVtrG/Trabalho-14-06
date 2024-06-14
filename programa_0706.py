@@ -29,6 +29,11 @@ df["Projeto1"].plot(kind = 'hist', ax=ax)
 df["Projeto4"].plot(kind = 'hist', ax=ax)
 st.pyplot(fig)
 
+ip.list_series('Selic')
+ip.list_series('Selic')
+ip.timeseries('BM12_TJOVER12', year=2021).plot("MONTH", "VALUE ((% a.m.))", ax=ax)
+ip.timeseries('BM12_TJOVER12', year=2022).plot("MONTH", "VALUE ((% a.m.))", ax=ax)
+st.pyplot(fig)
 
 
 
