@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 
+
 st.set_page_config(
   page_title="Empresa 1", 
 page_icon="👋",
@@ -10,22 +11,25 @@ page_icon="👋",
 st.header("Dados da empresa 1")
 
 arquivo = "https://raw.githubusercontent.com/TWTVtrG/Trabalho-14-06/main/empresa1.csv"
-dfe = pd.read_csv(arquivo, sep=';') 
-st.dataframe(dfe.head(3))
+df = pd.read_csv(arquivo, sep=';') 
+st.dataframe(df.head(23))
 
 st.write("Gráfico de linha dos indicadores ao longo do tempo")
 
 fig, ax = plt.subplots()
-dfe.plot(ax=ax)
+df.plot(ax=ax)
 st.pyplot(fig)
 
 fig, ax = plt.subplots()
-dfe.plot(kind = 'scatter', x = 'EBITDA', y = 'Lucro operacional', ax=ax)
+df.plot(kind = 'scatter', x = 'Projeto1', y = 'Projeto2', color='darkgreen', marker='*', ax=ax)
 st.pyplot(fig)
 
 fig, ax = plt.subplots()
-dfe["Lucro do período"].plot(kind = 'hist', ax=ax)
+df["Projeto1"].plot(kind = 'hist', ax=ax)
+df["Projeto4"].plot(kind = 'hist', ax=ax)
 st.pyplot(fig)
+
+
 
 
 st.write(dfe.groupby('Ano').mean())
