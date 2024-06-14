@@ -37,7 +37,3 @@ ip.timeseries('BM12_TJOVER12', year=2021).plot("MONTH", "VALUE ((% a.m.))", ax=a
 ip.timeseries('BM12_TJOVER12', year=2022).plot("MONTH", "VALUE ((% a.m.))", ax=ax)
 st.pyplot(fig)
 
-
-
-st.write(df.groupby('Ano').mean())
-
