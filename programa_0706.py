@@ -21,7 +21,7 @@ df.plot(ax=ax)
 st.pyplot(fig)
 
 fig, ax = plt.subplots()
-df.plot(kind = 'scatter', x = 'Projeto1', y = 'Projeto2', color='darkgreen', marker='*', ax=ax)
+df.plot(kind = 'scatter', x = 'Projeto1', y = 'Projeto2', ax=ax)
 st.pyplot(fig)
 
 fig, ax = plt.subplots()
