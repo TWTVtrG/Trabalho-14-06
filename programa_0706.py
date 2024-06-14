@@ -30,7 +30,8 @@ df["Projeto1"].plot(kind = 'hist', ax=ax)
 df["Projeto4"].plot(kind = 'hist', ax=ax)
 st.pyplot(fig)
 
-ip.list_series('Selic')
+dados = ip.list_series('Selic')
+dados
 selic = ip.timeseries('BM12_TJOVER12', yearGreaterThan=2021, yearSmallerThan=2024)
 selic
 fig, ax = plt.subplots()
