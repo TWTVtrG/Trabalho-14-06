@@ -2,10 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 
-st.set_page_config(("Dados da empresa 1")
-
-page_title="Empresa 1", 
-page_icon="👋"
+st.set_page_config(
+  page_title="Empresa 1", 
+page_icon="👋",
 )
 
 st.header("Dados da empresa 1") st.subheader("Dados")
