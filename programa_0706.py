@@ -9,7 +9,7 @@ page_title="Empresa 1",
 
 st.header("Dados da empresa 1")
 
-arquivo = "https://raw.githubusercontent.com/WesleyInfoBr2/aula_teste/main/empresa1.csv" 
+arquivo = "https://github.com/TWTVtrG/Trabalho-14-06/blob/main/projetos.csv"
 dfe = pd.read_csv(arquivo, sep=';') 
 st.dataframe(dfe.head(3))
 
