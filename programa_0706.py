@@ -7,7 +7,7 @@ st.set_page_config(
 page_icon="👋",
 )
 
-st.header("Dados da empresa 1") st.subheader("Dados")
+st.header("Dados da empresa 1")
 
 arquivo = "https://raw.githubusercontent.com/TWTVtrG/Trabalho-14-06/main/empresa1.csv"
 dfe = pd.read_csv(arquivo, sep=';') 
