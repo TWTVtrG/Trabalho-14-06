@@ -10,7 +10,7 @@ page_icon="👋",
 
 st.header("Dados da empresa 1")
 
-arquivo = "https://raw.githubusercontent.com/TWTVtrG/Trabalho-14-06/main/empresa1.csv"
+arquivo = "https://raw.githubusercontent.com/TWTVtrG/Trabalho-14-06/main/projetos.csv"
 df = pd.read_csv(arquivo, sep=';') 
 st.dataframe(df.head(23))
 
