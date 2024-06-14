@@ -5,11 +5,12 @@ import streamlit as st
 st.set_page_config((" Dados da empresa 1 ")
 
 page_title="Empresa 1", 
+page_icon="👋"
 )
 
-st.header("Dados da empresa 1")
+st.header("Dados da empresa 1") st.subheader("Dados")
 
-arquivo = "https://github.com/TWTVtrG/Trabalho-14-06/blob/main/projetos.csv"
+arquivo = "https://raw.githubusercontent.com/TWTVtrG/Trabalho-14-06/main/empresa1.csv"
 dfe = pd.read_csv(arquivo, sep=';') 
 st.dataframe(dfe.head(3))
 
