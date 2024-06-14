@@ -39,5 +39,5 @@ st.pyplot(fig)
 
 
 
-st.write(dfe.groupby('Ano').mean())
+st.write(df.groupby('Ano').mean())
 
