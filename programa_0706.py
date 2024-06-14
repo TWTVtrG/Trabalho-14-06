@@ -5,11 +5,11 @@ import ipeadatapy as ip
 
 
 st.set_page_config(
-  page_title="Empresa 1", 
+  page_title="Projeto", 
 page_icon="👋",
 )
 
-st.header("Dados da empresa 1")
+st.header("Dados do Projeto")
 
 arquivo = "https://raw.githubusercontent.com/TWTVtrG/Trabalho-14-06/main/projetos.csv"
 df = pd.read_csv(arquivo, sep=';') 
@@ -29,6 +29,8 @@ fig, ax = plt.subplots()
 df["Projeto1"].plot(kind = 'hist', ax=ax)
 df["Projeto4"].plot(kind = 'hist', ax=ax)
 st.pyplot(fig)
+
+st.header("Ipea Selic")
 
 dados = ip.list_series('Selic')
 dados
